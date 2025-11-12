@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@assets/stock_images/cleaning_service_mod_8e94cd9c.jpg";
+import headerVideo from "@assets/header_video.mp4";
 
 const slides = [
   {
@@ -65,9 +65,13 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src={headerVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
       />
       
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60" />

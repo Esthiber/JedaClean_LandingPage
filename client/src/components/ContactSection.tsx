@@ -150,7 +150,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-1 font-heading">Ubicación</h3>
-                  <p className="text-muted-foreground">Santo Domingo, República Dominicana</p>
+                  <p className="text-muted-foreground">San Francisco de M&aacute;coris República Dominicana</p>
                   <p className="text-muted-foreground">Cobertura nacional</p>
                 </div>
               </div>

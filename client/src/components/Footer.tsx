@@ -103,7 +103,7 @@ export default function Footer() {
               <li data-testid="text-footer-phone">(809) 000-0000</li>
               <li data-testid="text-footer-email">info@limpiezajeda.com</li>
               <li data-testid="text-footer-location">
-                Santo Domingo,<br />
+                San Francisco de M&aacute;coris,<br />
                 República Dominicana
               </li>
             </ul>
