@@ -7,6 +7,7 @@ import { CartProvider } from "@/contexts/CartContext";
 import Home from "@/pages/Home";
 import Store from "@/pages/Store";
 import Checkout from "@/pages/Checkout";
+import Clients from "@/pages/Clients";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -15,6 +16,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/tienda" component={Store} />
       <Route path="/checkout" component={Checkout} />
+      <Route path="/clientes" component={Clients} />
       <Route component={NotFound} />
     </Switch>
   );
