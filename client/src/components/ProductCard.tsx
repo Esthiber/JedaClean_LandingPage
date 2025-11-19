@@ -1,8 +1,8 @@
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, Plus, Minus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { type Product } from "@/contexts/CartContext";
+import { type Product, useCart } from "@/contexts/CartContext";
 
 interface ProductCardProps {
   product: Product;
@@ -10,6 +10,7 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, onAddToCart }: ProductCardProps) {
+  const { isInCart, getItemQuantity, addToCart, removeFromCart } = useCart();
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
       <CardHeader className="p-0">
@@ -41,7 +42,7 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
           </p>
           <div className="flex items-center justify-between">
             <span className="text-2xl font-bold text-primary">
-              ${product.price.toFixed(2)}
+              RD$ {product.price.toLocaleString('es-DO')}
             </span>
             {product.inStock && (
               <Badge variant="outline" className="text-green-600 border-green-600">
@@ -49,24 +50,57 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
               </Badge>
             )}
           </div>
+          {isInCart(product.id) && (
+            <div className="flex items-center justify-center gap-2 p-2 bg-blue-50 rounded-lg">
+              <span className="text-sm text-blue-700 font-medium">
+                En carrito: {getItemQuantity(product.id)}
+              </span>
+            </div>
+          )}
         </div>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button 
-          className="w-full" 
-          onClick={() => onAddToCart(product)}
-          disabled={!product.inStock}
-          variant={product.inStock ? "default" : "secondary"}
-        >
-          {product.inStock ? (
-            <>
+        {product.inStock ? (
+          isInCart(product.id) ? (
+            <div className="w-full flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => removeFromCart(product.id)}
+                className="flex-shrink-0"
+              >
+                <Minus className="h-4 w-4" />
+              </Button>
+              <span className="flex-1 text-center font-medium">
+                {getItemQuantity(product.id)}
+              </span>
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => addToCart(product)}
+                className="flex-shrink-0"
+              >
+                <Plus className="h-4 w-4" />
+              </Button>
+            </div>
+          ) : (
+            <Button 
+              className="w-full" 
+              onClick={() => onAddToCart(product)}
+            >
               <ShoppingCart className="h-4 w-4 mr-2" />
               Agregar al Carrito
-            </>
-          ) : (
-            "No Disponible"
-          )}
-        </Button>
+            </Button>
+          )
+        ) : (
+          <Button 
+            className="w-full" 
+            disabled
+            variant="secondary"
+          >
+            No Disponible
+          </Button>
+        )}
       </CardFooter>
     </Card>
   );

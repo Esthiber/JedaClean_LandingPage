@@ -34,18 +34,18 @@ interface Client {
 const clients: Client[] = [
   {
     id: 1,
-    name: "Banco Central de Lima",
-    logo: "https://via.placeholder.com/120x80/0052CC/FFFFFF?text=BCL",
+    name: "Banco Central de República Dominicana",
+    logo: "https://via.placeholder.com/120x80/0052CC/FFFFFF?text=BCRD",
     industry: "Financiero",
-    location: "Lima Centro, Lima",
+    location: "Zona Colonial, Santo Domingo",
     services: ["Limpieza Diaria", "Desinfección", "Mantenimiento de Pisos"],
     contractStart: "2023-01-15",
     rating: 5,
     testimonial: "Servicios JEDA ha transformado nuestras instalaciones. Su equipo es profesional y confiable, manteniendo los más altos estándares de limpieza que requiere una institución financiera.",
     contact: {
       person: "María Rodriguez",
-      phone: "+51 1 234-5678",
-      email: "maria.rodriguez@bcl.com.pe"
+      phone: "+1 809-234-5678",
+      email: "maria.rodriguez@bancentral.gov.do"
     },
     description: "Institución financiera líder que requiere servicios de limpieza especializados para áreas de alta seguridad y atención al cliente.",
     size: "Corporativa",
@@ -53,18 +53,18 @@ const clients: Client[] = [
   },
   {
     id: 2,
-    name: "Hospital San José",
-    logo: "https://via.placeholder.com/120x80/DC2626/FFFFFF?text=HSJ",
+    name: "Hospital General Plaza de la Salud",
+    logo: "https://via.placeholder.com/120x80/DC2626/FFFFFF?text=HGPS",
     industry: "Salud",
-    location: "San Isidro, Lima",
+    location: "Ensanche La Fe, Santo Domingo",
     services: ["Limpieza Hospitalaria", "Desinfección UV", "Manejo de Residuos Médicos"],
     contractStart: "2022-08-10",
     rating: 5,
     testimonial: "La calidad del servicio de JEDA es excepcional. Cumplen con todos los protocolos hospitalarios y han sido fundamentales durante la pandemia.",
     contact: {
       person: "Dr. Carlos Mendoza",
-      phone: "+51 1 345-6789",
-      email: "carlos.mendoza@hsj.pe"
+      phone: "+1 809-345-6789",
+      email: "carlos.mendoza@hgps.com.do"
     },
     description: "Centro médico especializado que requiere servicios de limpieza con protocolos estrictos de bioseguridad y manejo de desechos médicos.",
     size: "Grande",
@@ -72,18 +72,18 @@ const clients: Client[] = [
   },
   {
     id: 3,
-    name: "Centro Comercial MegaPlaza",
-    logo: "https://via.placeholder.com/120x80/7C3AED/FFFFFF?text=MP",
+    name: "Ágora Mall",
+    logo: "https://via.placeholder.com/120x80/7C3AED/FFFFFF?text=AM",
     industry: "Retail",
-    location: "Independencia, Lima",
+    location: "Bella Vista, Santo Domingo",
     services: ["Limpieza de Áreas Comunes", "Mantenimiento de Baños", "Limpieza de Vidrieras"],
     contractStart: "2023-03-01",
     rating: 4,
     testimonial: "JEDA mantiene nuestro centro comercial impecable las 24 horas. Su flexibilidad de horarios y calidad del servicio es incomparable.",
     contact: {
       person: "Ana García",
-      phone: "+51 1 456-7890",
-      email: "ana.garcia@megaplaza.pe"
+      phone: "+1 809-456-7890",
+      email: "ana.garcia@agoramall.com.do"
     },
     description: "Centro comercial de alta afluencia que necesita servicios de limpieza continua durante y después del horario comercial.",
     size: "Grande",
@@ -91,56 +91,56 @@ const clients: Client[] = [
   },
   {
     id: 4,
-    name: "Oficinas IBM Perú",
-    logo: "https://via.placeholder.com/120x80/1F2937/FFFFFF?text=IBM",
+    name: "Torre Empresarial AIRD",
+    logo: "https://via.placeholder.com/120x80/1F2937/FFFFFF?text=AIRD",
     industry: "Tecnología",
-    location: "Miraflores, Lima",
+    location: "Piantini, Santo Domingo",
     services: ["Limpieza de Oficinas", "Mantenimiento de Equipos", "Servicios Nocturnos"],
     contractStart: "2022-11-20",
     rating: 5,
     testimonial: "La profesionalidad de JEDA se refleja en cada detalle. Nuestras oficinas siempre están perfectas para recibir clientes internacionales.",
     contact: {
       person: "Roberto Silva",
-      phone: "+51 1 567-8901",
-      email: "roberto.silva@ibm.com"
+      phone: "+1 809-567-8901",
+      email: "roberto.silva@aird.org.do"
     },
-    description: "Oficinas corporativas de tecnología que requieren servicios de limpieza especializados para equipos sensibles y ambientes profesionales.",
+    description: "Torre empresarial moderna que alberga múltiples empresas tecnológicas que requieren servicios de limpieza especializados para equipos sensibles.",
     size: "Corporativa",
     featured: true
   },
   {
     id: 5,
-    name: "Restaurante Central",
-    logo: "https://via.placeholder.com/120x80/059669/FFFFFF?text=RC",
+    name: "Restaurante Adrian Tropical",
+    logo: "https://via.placeholder.com/120x80/059669/FFFFFF?text=AT",
     industry: "Gastronomía",
-    location: "Barranco, Lima",
+    location: "Zona Colonial, Santo Domingo",
     services: ["Limpieza de Cocina", "Desengrase Industrial", "Sanitización"],
     contractStart: "2023-05-15",
     rating: 4,
     testimonial: "En el sector gastronómico, la limpieza es fundamental. JEDA entiende nuestras necesidades específicas y siempre cumple.",
     contact: {
-      person: "Chef Augusto Hernández",
-      phone: "+51 1 678-9012",
-      email: "augusto@central.pe"
+      person: "Chef Rafael Vásquez",
+      phone: "+1 809-678-9012",
+      email: "rafael@adriantropical.com.do"
     },
-    description: "Restaurante de alta cocina que necesita servicios especializados de limpieza para cocinas industriales y áreas de comensales.",
+    description: "Restaurante emblemático dominicano que necesita servicios especializados de limpieza para cocinas industriales y áreas de comensales.",
     size: "Mediana",
     featured: false
   },
   {
     id: 6,
-    name: "Colegio San Patricio",
-    logo: "https://via.placeholder.com/120x80/DC2626/FFFFFF?text=CSP",
+    name: "Colegio San Judas Tadeo",
+    logo: "https://via.placeholder.com/120x80/DC2626/FFFFFF?text=SJT",
     industry: "Educación",
-    location: "La Molina, Lima",
+    location: "Naco, Santo Domingo",
     services: ["Limpieza de Aulas", "Sanitización", "Mantenimiento de Patios"],
     contractStart: "2023-02-01",
     rating: 5,
     testimonial: "La seguridad de nuestros estudiantes es primordial. JEDA utiliza productos seguros y mantiene nuestras instalaciones impecables.",
     contact: {
       person: "Directora Elena Vargas",
-      phone: "+51 1 789-0123",
-      email: "elena.vargas@sanpatricio.edu.pe"
+      phone: "+1 809-789-0123",
+      email: "elena.vargas@sanjudas.edu.do"
     },
     description: "Institución educativa que requiere servicios de limpieza seguros para niños y adolescentes, con horarios flexibles.",
     size: "Mediana",
@@ -148,45 +148,121 @@ const clients: Client[] = [
   },
   {
     id: 7,
-    name: "Fábrica Textil Alpaca",
-    logo: "https://via.placeholder.com/120x80/F59E0B/FFFFFF?text=FTA",
+    name: "Zona Franca Industrial Multimodal Caucedo",
+    logo: "https://via.placeholder.com/120x80/F59E0B/FFFFFF?text=ZFC",
     industry: "Manufacturera",
-    location: "Ate, Lima",
+    location: "Boca Chica, Santo Domingo",
     services: ["Limpieza Industrial", "Mantenimiento de Maquinaria", "Control de Polvo"],
     contractStart: "2022-06-30",
     rating: 4,
     testimonial: "JEDA entiende las necesidades específicas de nuestro sector industrial. Su servicio especializado mantiene nuestra producción sin interrupciones.",
     contact: {
       person: "Ing. Pedro Morales",
-      phone: "+51 1 890-1234",
-      email: "pedro.morales@alpacatextil.pe"
+      phone: "+1 809-890-1234",
+      email: "pedro.morales@caucedozf.com.do"
     },
-    description: "Planta industrial textil que necesita servicios de limpieza especializados para ambientes de producción y maquinaria.",
+    description: "Complejo industrial que alberga múltiples empresas manufactureras que necesitan servicios de limpieza especializados para ambientes de producción.",
     size: "Grande",
     featured: false
   },
   {
     id: 8,
-    name: "Oficinas SUNAT",
-    logo: "https://via.placeholder.com/120x80/1E40AF/FFFFFF?text=SUNAT",
+    name: "Dirección General de Impuestos Internos (DGII)",
+    logo: "https://via.placeholder.com/120x80/1E40AF/FFFFFF?text=DGII",
     industry: "Gubernamental",
-    location: "Jesús María, Lima",
+    location: "Gazcue, Santo Domingo",
     services: ["Limpieza de Oficinas", "Desinfección", "Mantenimiento General"],
     contractStart: "2023-01-01",
     rating: 5,
     testimonial: "Como entidad pública, requerimos servicios confiables y transparentes. JEDA cumple con todos nuestros estándares gubernamentales.",
     contact: {
       person: "Lic. Carmen Torres",
-      phone: "+51 1 901-2345",
-      email: "carmen.torres@sunat.gob.pe"
+      phone: "+1 809-901-2345",
+      email: "carmen.torres@dgii.gov.do"
     },
     description: "Oficinas gubernamentales que requieren servicios de limpieza con certificaciones especiales y cumplimiento de normativas públicas.",
     size: "Corporativa",
     featured: true
+  },
+  {
+    id: 9,
+    name: "Hotel Sheraton Santo Domingo",
+    logo: "https://via.placeholder.com/120x80/8B4513/FFFFFF?text=SSD",
+    industry: "Hotelería",
+    location: "Malecón, Santo Domingo",
+    services: ["Limpieza de Habitaciones", "Áreas Comunes", "Lavandería", "Desinfección"],
+    contractStart: "2022-12-01",
+    rating: 5,
+    testimonial: "En la industria hotelera, la limpieza impecable es fundamental. JEDA nos ayuda a mantener los estándares internacionales que nuestros huéspedes esperan.",
+    contact: {
+      person: "Gerente General Luis Martínez",
+      phone: "+1 809-221-6666",
+      email: "luis.martinez@sheraton.com.do"
+    },
+    description: "Hotel de lujo ubicado en el Malecón que requiere servicios de limpieza de alta calidad las 24 horas para habitaciones y áreas públicas.",
+    size: "Grande",
+    featured: false
+  },
+  {
+    id: 10,
+    name: "Universidad Autónoma de Santo Domingo (UASD)",
+    logo: "https://via.placeholder.com/120x80/FFD700/000000?text=UASD",
+    industry: "Educación",
+    location: "Ciudad Universitaria, Santo Domingo",
+    services: ["Limpieza de Aulas", "Laboratorios", "Bibliotecas", "Áreas Deportivas"],
+    contractStart: "2023-08-01",
+    rating: 4,
+    testimonial: "Como la universidad más grande del país, necesitamos un servicio confiable y eficiente. JEDA ha demostrado estar a la altura del desafío.",
+    contact: {
+      person: "Directora de Servicios Generales María José Peña",
+      phone: "+1 809-535-8273",
+      email: "mariajose.pena@uasd.edu.do"
+    },
+    description: "La universidad más antigua del continente americano que requiere servicios de limpieza para múltiples facultades y facilidades académicas.",
+    size: "Corporativa",
+    featured: false
+  },
+  {
+    id: 11,
+    name: "Aeropuerto Internacional Las Américas",
+    logo: "https://via.placeholder.com/120x80/1E90FF/FFFFFF?text=AILA",
+    industry: "Transporte",
+    location: "Punta Caucedo, Santo Domingo",
+    services: ["Limpieza de Terminales", "Áreas de Seguridad", "Restaurantes", "Mantenimiento General"],
+    contractStart: "2022-05-15",
+    rating: 5,
+    testimonial: "La imagen de nuestro país comienza en el aeropuerto. JEDA nos ayuda a dar la mejor primera impresión a los visitantes internacionales.",
+    contact: {
+      person: "Director de Operaciones Carlos Jiménez",
+      phone: "+1 809-947-2225",
+      email: "carlos.jimenez@aerodom.com"
+    },
+    description: "Principal aeropuerto internacional del país que maneja millones de pasajeros anuales y requiere limpieza especializada 24/7.",
+    size: "Corporativa",
+    featured: true
+  },
+  {
+    id: 12,
+    name: "Centro Médico Dr. Canela",
+    logo: "https://via.placeholder.com/120x80/32CD32/FFFFFF?text=CDC",
+    industry: "Salud",
+    location: "La Esperilla, Santo Domingo",
+    services: ["Limpieza Hospitalaria Especializada", "Esterilización", "Manejo de Residuos Médicos"],
+    contractStart: "2023-04-01",
+    rating: 5,
+    testimonial: "La bioseguridad es nuestra prioridad. JEDA cumple con todos los protocolos internacionales de limpieza hospitalaria.",
+    contact: {
+      person: "Dra. Patricia Canela",
+      phone: "+1 809-567-2424",
+      email: "patricia.canela@centrocanela.com.do"
+    },
+    description: "Centro médico privado de especialidades que requiere los más altos estándares de limpieza y desinfección hospitalaria.",
+    size: "Mediana",
+    featured: false
   }
 ];
 
-const industries = ["Todos", "Financiero", "Salud", "Retail", "Tecnología", "Gastronomía", "Educación", "Manufacturera", "Gubernamental"];
+const industries = ["Todos", "Financiero", "Salud", "Retail", "Tecnología", "Gastronomía", "Educación", "Manufacturera", "Gubernamental", "Hotelería", "Transporte"];
 const sizes = ["Todos", "Pequeña", "Mediana", "Grande", "Corporativa"];
 
 export default function Clients() {
@@ -247,7 +323,7 @@ export default function Clients() {
             <Card>
               <CardContent className="p-6 text-center">
                 <Users className="h-8 w-8 mx-auto mb-2 text-primary" />
-                <div className="text-2xl font-bold text-foreground">9</div>
+                <div className="text-2xl font-bold text-foreground">11</div>
                 <div className="text-muted-foreground">Sectores Industriales</div>
               </CardContent>
             </Card>
